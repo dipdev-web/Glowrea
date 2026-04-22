@@ -5,6 +5,12 @@ import Faq from "./pages/faq";
 import Shop from "./pages/shop";
 import Blog from "./pages/blog";
 import Head from "./Head/head";
+import Cart from "./cart";
+import ProductDetails from "./pages/productdetails";
+import './index.css'
+import Footer from "./Footer/footer";
+import Register from "./pages/register";
+import Checkout from "./pages/checkout";
 import './App.css'
 export default function App(){
   return (
@@ -16,8 +22,14 @@ export default function App(){
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/faq" element={<Faq />} />  
+        <Route path="/cart" element={<Cart />} />  
+        <Route path="/product/:id" element={<ProductDetails />} />
+         <Route path="/register" element={<Register />} />  
+         <Route path="/checkout" element={<Checkout />} /> 
       </Routes>
+      <Footer/>
     </BrowserRouter>
+    
     
   );
 }
