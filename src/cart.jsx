@@ -19,7 +19,7 @@ export default function Cart() {
     <div className="min-h-screen bg-[#fff7fa] flex flex-col font-sans">
 
       <div className="bg-gradient-to-br from-[#d6a2b5] to-[#FFF0F5] shadow-md mb-10 text-center py-16">
-        <h1 className="text-5xl font-bold text-[#3A071F]">My Cart</h1>
+        <h1 className="heading text-5xl font-bold text-[#3A071F]">My Cart</h1>
         <p className="text-[#6F1F3B]/70 mt-3">Review your selected products</p>
       </div>
 
