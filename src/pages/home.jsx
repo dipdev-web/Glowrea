@@ -149,7 +149,7 @@ const categories = [
   <section  data-aos="fade-down" className="bg-white py-20">
     <div className="max-w-[1200px] mx-auto px-6 text-center">
 
-      <h1 className="heading text-5xl font-bold text-[#3A071F]">
+      <h1 className="heading text-4xl md:text-5xl font-bold text-[#3A071F]">
         Shop New Arrivals
       </h1>
 

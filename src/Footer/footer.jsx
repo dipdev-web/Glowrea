@@ -10,9 +10,9 @@ export default function Footer() {
     <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       
       <div className="flex flex-col gap-3">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900">dipdev</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Glowria</h2>
         <p className="text-gray-500 text-sm leading-relaxed">
-          Building digital experiences that matter with clean code and user-focused design.
+         Creating effortless beauty routines with innovative, results-driven skincare.
         </p>
       </div>
 
