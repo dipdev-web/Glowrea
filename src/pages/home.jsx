@@ -173,7 +173,7 @@ const categories = [
   <section  data-aos="fade-down" className="bg-gradient-to-br from-[#d298ad] to-[#FFF0F5] py-24 relative overflow-hidden">
     <div className="max-w-[1200px] mx-auto px-10 text-center flex justify-center items-center relative z-10">
       <div className="flex flex-col items-center gap-6">
-        <h1 className="heading md:text-5xl font-bold text-[#2e2e2e]">
+        <h1 className="heading text-4xl md:text-5xl font-bold text-[#2e2e2e]">
           Spring Sale!
         </h1>
         <p className="text-black text-xl italic">
