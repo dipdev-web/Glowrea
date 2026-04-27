@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
 import { useParams, useNavigate } from "react-router-dom";
-// Using Feather variant for a light, clean look
 import { FiPlus, FiMinus, FiChevronDown } from "react-icons/fi";
 
 export default function ProductDetails() {
@@ -14,7 +13,7 @@ export default function ProductDetails() {
   const product = allProducts.find((p) => p.id === parseInt(id));
   const [message, setMessage] = useState("")
 
-  const [activeImg, setActiveImg] = useState("");
+  const [activeImg, setActiveImg] = useState(null);
   const [openSection, setOpenSection] = useState("description");
   const [qty, setQty] = useState(1);
 
@@ -43,12 +42,7 @@ export default function ProductDetails() {
 
       <div className="flex gap-2 mt-4 justify-center md:justify-start">
         {gallery.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            onClick={() => setActiveImg(img)}
-            className={`w-14 h-14 object-cover rounded-md cursor-pointer border transition ${
-              activeImg === img ? "border-[#3A071F] scale-105" : "border-transparent opacity-60 hover:opacity-100"
+          <img key={index} src={img} onClick={() => setActiveImg(img)} className={`w-14 h-14 object-cover rounded-md cursor-pointer border transition ${activeImg === img ? "border-[#3A071F] scale-105" : "border-transparent opacity-60 hover:opacity-100"
             }`}
           />
         ))}
