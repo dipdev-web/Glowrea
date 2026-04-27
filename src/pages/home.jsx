@@ -116,7 +116,7 @@ const categories = [
         {productCard?.slice(0, 4).map((product) => (
           <div key={product.id} className="group bg-[#efdce3] p-3 rounded-2xl shadow-sm hover:shadow-xl transition">
             <img src={product.image} className="w-full h-48 object-cover group-hover:scale-110 transition" />
-            <h3 className="font-semibold text-[#3A071F] text-sm truncate">{product.name}</h3>
+            <h3 className="font-semibold mt-3 text-[#3A071F] text-sm truncate">{product.name}</h3>
             <p className="text-[#6F1F3B] font-medium mt-1">{product.prix}</p>
             <button onClick={() => handleViewDetails(product)} className="mt-4 w-full bg-[#3A071F] text-white py-4 rounded-lg text-xs uppercase tracking-widest hover:bg-[#77202F] transition">Add to Cart</button>
           </div>
